@@ -50,12 +50,12 @@ button, input, select, textarea {
     font-family: inherit;
     font-size: 100%;
 }
-.clearfix:after {
-    clear: both;
-}
 .clearfix:before, .clearfix:after {
     display: table;
     content: "";
+}
+.clearfix:after {
+    clear: both;
 }
 /*body*/
 .index-main-body {

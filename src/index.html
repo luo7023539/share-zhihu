@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
+
 <div class="index-main">
     <div class="index-main-body">
         <div class="index-header">
             <h1 class="logo hide-text">知乎</h1>
             <h2 class="subtitle">与世界分享你的知识、经验和见解</h2>
         </div>
-        <div class="desk-front sign-flow clearfix sign-flow-simple">
+        <div class="sign-flow">
             <div class="index-tab-navs">
                 <div class="navs-slider" data-active-index="0">
                     <a href="#signup" class="active">注册</a>
@@ -24,7 +25,6 @@
             </div>
             <div class="view view-signin"  style="display: none;" data-za-module="SignInForm">
                 <form method="POST" novalidate="novalidate">
-                    <input type="hidden" name="_xsrf" value="62dd37e48891d262620953e3efcaca39">
                     <div class="group-inputs">
                         <div class="email input-wrapper">
                             <input type="text" name="account" aria-label="手机号或邮箱" placeholder="手机号或邮箱" required="">
@@ -39,10 +39,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="button-wrapper command">
-                        <button class="sign-button submit" type="submit">登录</button>
+                    <div class="button-wrapper">
+                        <button class="sign-button" type="submit">登录</button>
                     </div>
-                    <div class="signin-misc-wrapper clearfix">
+                    <div class="signin-misc-wrapper">
                         <label class="remember-me">
                             <input type="checkbox" name="remember_me" checked="" value="true"> 记住我
                         </label>
@@ -59,34 +59,25 @@
                 </form>
             </div>
             <div class="view view-signup selected"  data-za-module="SignUpForm">
-                <form class="zu-side-login-box" action="/register/email" id="sign-form-1" autocomplete="off" method="POST" novalidate="novalidate">
-                    <input type="password" hidden="">
+                <form action="/register/email" id="sign-form-1" autocomplete="off" method="POST" novalidate="novalidate">
                     <div class="group-inputs">
-
-
                         <div class="name input-wrapper">
                             <input required="" type="text" name="fullname" aria-label="姓名" placeholder="姓名">
                         </div>
                         <div class="email input-wrapper">
-
                             <input required="" type="text" class="account" name="phone_num" aria-label="手机号（仅支持中国大陆）" placeholder="手机号（仅支持中国大陆）">
-
                         </div>
-
                         <div class="input-wrapper">
                             <input required="" type="password" name="password" aria-label="密码" placeholder="密码（不少于 6 位）" autocomplete="off">
                         </div>
-
                         <div class="input-wrapper captcha-module" data-type="en" style="display: block;">
                             <input id="captcha" name="captcha" placeholder="验证码" required="" data-rule-required="true" data-msg-required="请填写验证码">
                             <div class="captcha-container">
-
-                                <img class="js-refreshCaptcha captcha" data-tooltip="s$t$看不清楚？换一张" alt="验证码" src="./img/captcha1.gif" style="display: block;">
+                                <img class="captcha" data-tooltip="s$t$看不清楚？换一张" alt="验证码" src="./img/captcha1.gif" style="display: block;">
                             </div>
                         </div>
-
                     </div>
-                    <div class="button-wrapper command">
+                    <div class="button-wrapper">
                         <button class="sign-button submit" type="submit">注册知乎</button>
                     </div>
                 </form>
@@ -104,16 +95,18 @@
         </div>
     </div>
 </div>
+
 <div class="footer">
-    <a href="/org/signin" class="footer-mobile-show">使用机构帐号登录</a>
+    <a href="#" class="footer-mobile-show">使用机构帐号登录</a>
     <span class="dot footer-mobile-show">·</span>
-    <a href="/contact" class="footer-mobile-show">联系我们</a>
+    <a href="#" class="footer-mobile-show">联系我们</a>
 </div>
+
 <div class="AppPromotionBar GaussianBlur">
     <div class="AppPromotionBar-icon"></div>
     <p class="AppPromotionBar-title">知乎</p>
     <p class="AppPromotionBar-describe">来知乎，参与讨论</p>
-    <a class="AppPromotionBar-downloadButton" href="http://api.zhihu.com/client/download?ct=mobileweb_home_downloadlink&amp;utm_source=weidengluyemian&amp;utm_medium=mobile_download_app_button&amp;utm_campaign=downloadlink">点击下载</a>
+    <a class="AppPromotionBar-downloadButton" href="#">点击下载</a>
 
 </div>
 <script src="js/index.js"></script>
