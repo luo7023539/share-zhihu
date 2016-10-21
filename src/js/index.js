@@ -30,6 +30,7 @@
 
     function changeTabs() {
         var hash = window.location.href.urlToObj().hash;
+        console.log(hash);
         if(hash === 'signup'){
             utils.hide(viewSignin);
             utils.show(viewSignUp);
