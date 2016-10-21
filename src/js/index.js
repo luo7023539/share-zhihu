@@ -21,6 +21,28 @@
 }();
 
 
+/*实现注册登录切换*/
+~function () {
+    var signUp = document.querySelector('#signUp'),
+        signIn = document.querySelector('#signIn'),
+        viewSignin = document.querySelector('.view-signin'),
+        viewSignUp = document.querySelector('.view-signup');
+
+    function changeTabs() {
+        var hash = window.location.href.urlToObj().hash;
+        if(hash === 'signup'){
+            utils.hide(viewSignin);
+            utils.show(viewSignUp);
+        }else{
+            utils.show(viewSignin);
+            utils.hide(viewSignUp);
+        }
+    }
+    singleClick(signUp,changeTabs);
+    singleClick(signIn,changeTabs);
+}();
+
+
 
 
 

@@ -18,12 +18,12 @@
         <div class="sign-flow">
             <div class="index-tab-navs">
                 <div class="navs-slider" data-active-index="0">
-                    <a href="#signup" class="active">注册</a>
-                    <a href="#signin">登录</a>
+                    <a href="#signup" class="active" id="signUp">注册</a>
+                    <a href="#signin" id="signIn">登录</a>
                     <span class="navs-slider-bar"></span>
                 </div>
             </div>
-            <div class="view view-signin"  style="display: none;" data-za-module="SignInForm">
+            <div class="view view-signin"  style="display: none;"  data-za-module="SignInForm">
                 <form method="POST" novalidate="novalidate">
                     <div class="group-inputs">
                         <div class="email input-wrapper">
@@ -42,7 +42,7 @@
                     <div class="button-wrapper">
                         <button class="sign-button" type="submit">登录</button>
                     </div>
-                    <div class="signin-misc-wrapper">
+                    <div class="signin-misc-wrapper clearfix">
                         <label class="remember-me">
                             <input type="checkbox" name="remember_me" checked="" value="true"> 记住我
                         </label>
@@ -58,7 +58,7 @@
                     </div>
                 </form>
             </div>
-            <div class="view view-signup selected"  data-za-module="SignUpForm">
+            <div class="view view-signup selected"   data-za-module="SignUpForm">
                 <form action="/register/email" id="sign-form-1" autocomplete="off" method="POST" novalidate="novalidate">
                     <div class="group-inputs">
                         <div class="name input-wrapper">
@@ -109,6 +109,8 @@
     <a class="AppPromotionBar-downloadButton" href="#">点击下载</a>
 
 </div>
+<script src="js/utils.js"></script>
+<script src="js/singleClick.js"></script>
 <script src="js/index.js"></script>
 </body>
 </html>
