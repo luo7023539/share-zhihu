@@ -1,0 +1,374 @@
+/*Common*/
+body, ul, ol, li, p, h1, h2, h3, h4, h5 {
+    margin: 0;
+    padding: 0
+}
+button, input, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: 100%
+}
+img {
+    border: 0
+}
+a {
+    text-decoration: none
+}
+a:hover {
+    text-decoration: underline
+}
+a:link,a:visited {
+    color: #555;
+    text-decoration: none;
+}
+h2 {
+    display: block;
+    font-size: 1.5em;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+html{
+    font-size: 100px;
+}
+body {
+    color: #555;
+    font-size: .15rem;
+    line-height: 1.7;
+    font-family: 'Helvetica Neue',Helvetica,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;
+    background: #f7fafc;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+form {
+    display: block;
+    margin-top: 0;
+}
+button, input, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: 100%;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix:before, .clearfix:after {
+    display: table;
+    content: "";
+}
+/*body*/
+.index-main-body {
+    margin: auto;
+    padding: .3rem 0 1.02rem;
+    width: 3rem;
+}
+
+
+/*header*/
+.index-header {
+    text-align: center;
+}
+
+.index-header .logo {
+    margin: 0 auto;
+    width: .96rem;
+    height: .44rem;
+    background: url(../img/logo@2x.png) no-repeat;
+    background-size: contain;
+}
+
+.hide-text {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+
+.index-header .subtitle {
+    margin: .3rem 0 .2rem;
+    font-weight: 400;
+    font-size: .18rem;
+    line-height: 1;
+}
+
+/*tab*/
+.sign-flow {
+    text-align: center;
+}
+
+.index-tab-navs {
+    margin-bottom: .1rem;
+    font-size: .18rem;
+    text-align: center;
+}
+
+
+.index-tab-navs {
+    margin-bottom: .1rem;
+    font-size: .18rem;
+    text-align: center;
+}
+
+.index-tab-navs .navs-slider {
+    position: relative;
+    display: inline-block;
+}
+
+.index-tab-navs a {
+    float: left;
+    width: 4em;
+    line-height: .35rem;
+    opacity: .7;
+    -ms-filter: "alpha(Opacity=70)";
+    -webkit-transition: opacity .15s,color .15s;
+    transition: opacity .15s,color .15s;
+}
+
+.index-tab-navs a.active {
+    opacity: 1;
+    -ms-filter: "alpha(Opacity=100)";
+    color: #0f88eb;
+}
+
+.index-tab-navs a {
+    float: left;
+    width: 4em;
+    line-height: .35rem;
+    opacity: .7;
+    -ms-filter: "alpha(Opacity=70)";
+    -webkit-transition: opacity .15s,color .15s;
+    transition: opacity .15s,color .15s;
+}
+
+
+.index-tab-navs .navs-slider .navs-slider-bar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 0 .8em;
+    width: 2.4em;
+    height: .02rem;
+    background: #0f88eb;
+    -webkit-transition: left .15s ease-in;
+    transition: left .15s ease-in;
+}
+
+/*signin  and  signup*/
+
+.sign-flow .view {
+    float: none;
+    margin: auto;
+    width: 3rem;
+    text-align: left;
+}
+
+.sign-flow .view .group-inputs {
+    padding: .01rem 0;
+    border: .01rem solid #d5d5d5;
+    border-radius: .03rem;
+}
+
+.sign-flow .view .input-wrapper {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+}
+
+.sign-flow .view .input-wrapper input {
+    padding: 1em .8em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.sign-flow .view .input-wrapper input, .sign-flow .view .input-wrapper input:focus {
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    background: #fff;
+}
+
+.sign-flow .view .signin-misc-wrapper .remember-me {
+    float: left;
+}
+
+.sign-flow .view .signin-misc-wrapper .remember-me input {
+    margin-right: .03rem;
+}
+
+.sign-flow .view .signin-misc-wrapper .unable-login {
+    float: right;
+}
+
+.sign-flow .social-signup-wrapper .name {
+    vertical-align: middle;
+    margin-right: .2rem;
+    color: #787878;
+    cursor: pointer;
+}
+
+.sign-flow .view .agreement-tip {
+    margin-top: .21rem;
+    font-size: .12rem;
+    text-align: center;
+    color: #999;
+}
+
+.sign-flow .view .agreement-tip a {
+    color: #698ebf;
+}
+
+.sign-flow .captcha-module .captcha {
+    position: absolute;
+    top: 50%;
+    right: .5em;
+    margin-top: -.21rem;
+}
+
+.sign-flow .captcha-module .captcha-container img {
+    width: .8rem;
+    height: .4rem;
+}
+
+.sign-flow .sign-button {
+    background: #0f88eb;
+    box-shadow: none;
+    border: 0;
+    border-radius: .03rem;
+    line-height: .41rem;
+    color: #fff;
+    display: block;
+    padding: 0;
+    width: 100%;
+    font-size: .15rem;
+    text-align: center;
+    text-shadow: 0 .01rem .01rem rgba(0,0,0,.2);
+    outline: 0;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+
+.sign-flow .view .button-wrapper, .sign-flow .view .signin-misc-wrapper, .sign-flow .view .social-signup-wrapper {
+    margin-top: .22rem;
+}
+
+.sign-flow .social-signup-wrapper a {
+    margin: 0 .25rem 0 0;
+    opacity: .7;
+    -ms-filter: "alpha(Opacity=70)";
+    -webkit-transition: opacity .15s ease-out;
+    transition: opacity .15s ease-out;
+}
+
+.sign-flow .social-signup-wrapper a .sprite-index-icon-weibo {
+    background: url("../img/sprites@2x.auto.png") no-repeat 0 -44px;
+    width: .2rem;
+    height: .18rem;
+}
+
+
+/*QCode*/
+
+.sign-flow .QRCode {
+    margin-top: .48rem;
+    position: relative;
+}
+
+.sign-flow .QRCode-toggleButton {
+    position: relative;
+    display: block;
+    padding: 0;
+    width: 100%;
+    height: .41rem;
+    line-height: .39rem;
+    color: #5fa6e5;
+    background: 0 0;
+    border: 1px solid #96c2e9;
+    border-radius: .03rem;
+    cursor: pointer;
+    outline: 0;
+}
+
+
+.sign-flow .QRCode-card {
+    display: none;
+    position: absolute;
+    left: .5rem;
+    bottom: 2.8rem;
+    width: 3.1rem;
+    height: 3.1rem;
+    background-color: #fff;
+    box-shadow: 0 0 .08rem 0 rgba(0,0,0,.15);
+    border-radius: .1rem;
+}
+
+
+.footer {
+    font-size: .12rem;
+    line-height: .42rem;
+    text-align: center;
+    margin-top: -.5rem;
+}
+
+.footer a {
+    color: #aebdc9;
+}
+
+.AppPromotionBar {
+    position: fixed;
+    bottom: 0;
+    z-index: 3;
+    width: 100%;
+    height: 60px;
+    -webkit-transition: opacity .2s ease-out;
+    transition: opacity .2s ease-out;
+}
+
+.GaussianBlur {
+    background-color: rgba(255,255,255,.96);
+    box-shadow: 0 -1px 0 0 rgba(0,0,0,.08);
+}
+
+.AppPromotionBar-icon {
+    float: left;
+    margin: .1rem .1rem 0;
+    width: .41rem;
+    height: .41rem;
+    background-image: url(../img/icon@3x.png);
+    background-size: .41rem;
+}
+
+.AppPromotionBar-title, .AppPromotionBar-describe {
+    margin-right: .84rem;
+    line-height: 1;
+    color: rgba(12,26,62,.48);
+}
+
+.AppPromotionBar-title {
+    margin-top: 12px;
+    margin-bottom: 0;
+    font-size: 19px;
+}
+
+.AppPromotionBar-downloadButton {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    bottom: 0;
+    width: .74rem;
+    height: .23rem;
+    padding-top: .1rem;
+    margin: auto;
+    font-size: .13rem;
+    line-height: 1;
+    text-align: center;
+    color: #fff;
+    background-color: #0084ff;
+    border-radius: 4px;
+    box-shadow: inset 0 -2px #006acc;
+}
+.AppPromotionBar-downloadButton:visited{
+    color: #fff;
+}
